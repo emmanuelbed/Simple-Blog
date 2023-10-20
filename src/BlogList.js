@@ -1,5 +1,5 @@
 const BlogList = ({ blogs, title }) => {
-  console.log();
+  // console.log();
   return (
     <div className="blog-list">
       <h1>{title}</h1>
