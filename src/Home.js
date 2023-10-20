@@ -10,15 +10,25 @@ const Home = () => {
   //   setBlogs(newBlogs);
   // };
   useEffect(() => {
-    fetch("http://localhost:8000/blogs")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        // console.log(data);
-        setBlogs(data);
-        setIsPending(false);
-      });
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogss")
+        .then((res) => {
+          console.log(res);
+          if (!res.ok) {
+            throw Error("Could not Fetch the data for that resource");
+          } else {
+            return res.json();
+          }
+        })
+        .then((data) => {
+          // console.log(data);
+          setBlogs(data);
+          setIsPending(false);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }, 1000);
   }, []);
 
   return (
