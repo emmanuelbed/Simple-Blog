@@ -53,6 +53,18 @@
       "body": "Get new Great Blog",
       "author": "mario",
       "id": 9
+    },
+    {
+      "title": "Hello ",
+      "body": "New Text",
+      "author": "mario",
+      "id": 10
+    },
+    {
+      "title": "Hello ",
+      "body": "Lorem",
+      "author": "yoshi",
+      "id": 11
     }
   ]
 }
